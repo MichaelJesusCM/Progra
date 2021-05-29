@@ -8,10 +8,10 @@ public class Cuadrados {
  this.lado= l;
  }
  
- public double area(){
- return lado*lado;
+ public void area(){
+ System.out.println("EL Área es: "+(this.lado*this.lado));
  }
- public double perimetro(){
- return lado +lado +lado +lado;
+ public void perimetro(){
+ System.out.println("EL Permimetro es: "+(this.lado*4));
  }
 }
