@@ -11,8 +11,8 @@ public class Rectangulo {
     
     }
     
-    public double area(){
-    return this.base * this.altura;
+    public void area(){
+    System.out.println("El perimetro es: "+(this.base*this.altura));
    
     }
     
