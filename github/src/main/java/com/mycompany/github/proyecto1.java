@@ -52,40 +52,47 @@ public class proyecto1 {
                     rec.perimetro();
                     break;
                 case 3:
-                    double suma=0;
+                    double suma = 0;
                     System.out.println("Ingrese la Altura");
                     System.out.println("Ingrese la Base");
                     altura = sc.nextDouble();
                     base = sc.nextDouble();
-                    Triangulo tri=new Triangulo(altura,base,lado);
+                    Triangulo tri = new Triangulo(altura, base, lado);
                     tri.area();
-                    for(int cont=0;cont<3;cont++){
-                    System.out.println("Ingrese El Lado");
-                    lado = sc.nextDouble();
-                    suma=suma+lado;
-                    
+                    for (int cont = 0; cont < 3; cont++) {
+                        System.out.println("Ingrese El Lado");
+                        lado = sc.nextDouble();
+                        suma = suma + lado;
+                        tri.perimetro();
                     }
                     break;
                 case 4:
-                     System.out.println("aun no esta listo");
+                    System.out.println("aun no esta listo");
+
+                    break;
+                case 5:
+                    System.out.println("aun no esta listo");
+
+                    break;
+                case 6:
+                    System.out.println("Ingrese La Base Mayor");
+                    System.out.println("Ingrese La Base Menor");
+                    System.out.println("Ingrese La Base Altura ");
+                    System.out.println("Ingrese La Base Lado");
+                    baseM = sc.nextDouble();
+                    basem = sc.nextDouble();
+                    altura = sc.nextDouble();
+                    lado = sc.nextDouble();
                     
                     break;
-                 case 5:
-                     System.out.println("aun no esta listo");
-                    
-                    break;    
-                 case 6:
-                     System.out.println("aun no esta listo");
-                    
+                case 7:
+                    System.out.println("aun no esta listo");
+
                     break;
-                 case 7:
-                     System.out.println("aun no esta listo");
-                    
-                    break;  
                 case 8:
-                     System.out.println("aun no esta listo");
-                    
-                    break;   
+                    System.out.println("aun no esta listo");
+
+                    break;
             }
         } catch (ArithmeticException e) {
             System.out.println("No se puede dividir para cero.");
