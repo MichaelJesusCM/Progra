@@ -74,7 +74,7 @@ public class proyecto1 {
                     System.out.println("aun no esta listo");
 
                     break;
-                case 6:
+                case 6:                                                         //trapecio
                     System.out.println("Ingrese La Base Mayor");
                     System.out.println("Ingrese La Base Menor");
                     System.out.println("Ingrese La Base Altura ");
@@ -83,7 +83,9 @@ public class proyecto1 {
                     basem = sc.nextDouble();
                     altura = sc.nextDouble();
                     lado = sc.nextDouble();
-                    
+                    Trapecio tra = new Trapecio(baseM,basem,altura,lado);
+                    tra.area();
+                    tra.perimetro();
                     break;
                 case 7:
                     System.out.println("aun no esta listo");
