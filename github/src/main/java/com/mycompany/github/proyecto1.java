@@ -75,8 +75,15 @@ public class proyecto1 {
 
                     break;
                 case 6:
-                    System.out.println("Ingrese ");
-
+                    System.out.println("Ingrese La Base Mayor");
+                    System.out.println("Ingrese La Base Menor");
+                    System.out.println("Ingrese La Base Altura ");
+                    System.out.println("Ingrese La Base Lado");
+                    baseM = sc.nextDouble();
+                    basem = sc.nextDouble();
+                    altura = sc.nextDouble();
+                    lado = sc.nextDouble();
+                    
                     break;
                 case 7:
                     System.out.println("aun no esta listo");
