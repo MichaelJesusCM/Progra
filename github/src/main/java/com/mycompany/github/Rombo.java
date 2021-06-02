@@ -19,12 +19,12 @@ public class Rombo {
         this.Dime =D;
         this.lado=l;
     }
-   public double area(){
-       return this.Dime * this.diame;
+   public void area(){
+       System.out.println("El Área Es: "+(this.diame*this.Dime));
    }
    
-   public double perimetro(){
-       return this.lado+this.lado+this.lado+this.lado;
-   }
+   public void perimetro(){
+       System.out.println("El Área Es: "+(lado*4));
    
+   }
 }
