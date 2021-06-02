@@ -57,6 +57,8 @@ public class proyecto1 {
                     altura = sc.nextDouble();
                     System.out.println("Ingrese la Base");
                     base = sc.nextDouble();
+                    System.out.println("Ingrese un Lado");
+                    lado = sc.nextDouble();
                     Triangulo tri = new Triangulo(altura, base, lado);
                     tri.area();
                     tri.perimetro();
