@@ -57,6 +57,8 @@ public class proyecto1 {
                     altura = sc.nextDouble();
                     System.out.println("Ingrese la Base");
                     base = sc.nextDouble();
+                    System.out.println("Ingrese un Lado");
+                    lado = sc.nextDouble();
                     Triangulo tri = new Triangulo(altura, base, lado);
                     tri.area();
                     tri.perimetro();
@@ -111,7 +113,7 @@ public class proyecto1 {
                     lado=sc.nextDouble();
                     System.out.println("Ingrese La Apotema");
                     apotema=sc.nextDouble();
-                    Poligono pol = new Poligono(apotema,numla,lado);
+                    Poligonon pol = new Poligonon(apotema,numla,lado);
                     pol.perimetro();
                     pol.area();
                     break;
