@@ -5,6 +5,8 @@
  */
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Pc Xtreme
@@ -18,9 +20,9 @@ public Romboide(double b, double h){
     this.altura =h;
 }
 public void area(){
-    System.out.println("El Área Es:"+(this.base*this.altura));
+    JOptionPane.showMessageDialog(null,"El Área Es:"+(this.base*this.altura));
 }
 public void perimetro(){
-    System.out.println("El Área Es:"+((this.base*2)*(this.altura*2)));
+    JOptionPane.showMessageDialog(null,"El Área Es:"+((this.base*2)*(this.altura*2)));
 }
 }
