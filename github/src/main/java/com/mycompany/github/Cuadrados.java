@@ -1,6 +1,8 @@
 
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 public class Cuadrados {
  private double lado;
  
@@ -9,9 +11,9 @@ public class Cuadrados {
  }
  
  public void area(){
- System.out.println("EL Área es: "+(this.lado*this.lado));
+ JOptionPane.showMessageDialog(null,"EL Área es: "+(this.lado*this.lado));
  }
  public void perimetro(){
- System.out.println("EL Permimetro es: "+(this.lado*4));
+JOptionPane.showMessageDialog(null,"EL Permimetro es: "+(this.lado*4));
  }
 }

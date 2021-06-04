@@ -5,6 +5,8 @@
  */
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Michael Jesús
@@ -24,12 +26,12 @@ public class Poligonon {
         this.numla = 0;
     }
         public void perimetro() {
-        System.out.println("El Perimetro Es :" + (this.lado * this.numla));
+        JOptionPane.showMessageDialog(null,"El Perimetro Es :" + (this.lado * this.numla));
 
     }
 
     public void area() {
-        System.out.println("El Área es: " + (this.perimetro * this.apotema) / 2);
+        JOptionPane.showMessageDialog(null,"El Área es: " + (this.perimetro * this.apotema) / 2);
     }
 
 }
