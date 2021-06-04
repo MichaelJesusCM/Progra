@@ -21,14 +21,15 @@ public class proyecto1 {
                                                                                                             //menus
         
        opcion=JOptionPane.showInputDialog("selecione operacion a realizar."
-        +"\n 1.  cuadradro "
-        +"\n 2.  cuadradro"
-        +"\n 3. triangulo"
-        +"\n 4.rombo"
-        +"\n 5.romboide "
-        +"\n 6.trapecio"
-        +"\n 7.circulo"
-        +"\n 8.salir" );
+        +"\n 1.  Cuadradro "
+        +"\n 2.  Rectangulo"
+        +"\n 3. Triangulo"
+        +"\n 4.Rombo"
+        +"\n 5.Romboide "
+        +"\n 6.Trapecio"
+        +"\n 7.Circulo"
+        +"\n 8.Poligono"       
+        +"\n 9.salir" );
 
             switch (opcion) {
                 case "1":                                                         //cuadrado
@@ -87,13 +88,14 @@ public class proyecto1 {
                     cir.area();
                     cir.perimetro();
                     break;
-                case "9":                                                         //poligono
+                case "8":                                                         //poligono
                     numla=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el Numero de Lados "));
                     lado=Double.parseDouble(JOptionPane.showInputDialog("Ingrese Valor para Lado"));
                     apotema=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el Apotema"));
                     Poligonon pol = new Poligonon(apotema,numla,lado);
                     pol.perimetro();
                     pol.area();
+                    
                     break;
             }                                                                   //Exepciones
         } catch (ArithmeticException e) {

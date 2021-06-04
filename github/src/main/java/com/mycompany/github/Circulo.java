@@ -5,6 +5,8 @@
  */
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Michael Jesús
@@ -22,11 +24,11 @@ public class Circulo {
     }
 
     public void area() {
-        System.out.println("El area es: " + (this.pi * this.radio));
+       JOptionPane.showMessageDialog(null,"El area es: " + (this.pi * this.radio));
     }
 
     public void perimetro() {
-        System.out.println("El area es: " + (this.pi * this.diametro));
+        JOptionPane.showMessageDialog(null,"El area es: " + (this.pi * this.diametro));
 
     }
 }
