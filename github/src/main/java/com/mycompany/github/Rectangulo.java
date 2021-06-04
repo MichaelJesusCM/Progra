@@ -1,6 +1,8 @@
 
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 public class Rectangulo {
     private double base;
     private double altura;
@@ -12,11 +14,11 @@ public class Rectangulo {
     }
     
     public void area(){
-    System.out.println("El perimetro es: "+(this.base*this.altura));
+   JOptionPane.showMessageDialog(null,"El perimetro es: "+(this.base*this.altura));
    
     }
     
     public void perimetro(){
-        System.out.println("El perimetro es: "+((this.base*2)+(this.altura*2)));
+        JOptionPane.showMessageDialog(null,"El perimetro es: "+((this.base*2)+(this.altura*2)));
     }
 }
