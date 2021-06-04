@@ -1,6 +1,8 @@
 
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 public class Trapecio {
     private double baseM;
     private double basem;
@@ -15,12 +17,12 @@ public class Trapecio {
  }
  public void area(){
   
-    System.out.println("El perimetro es: "+((baseM*basem)*altura)/2);
+   JOptionPane.showMessageDialog(null,"El perimetro es: "+((baseM*basem)*altura)/2);
  
  }
  
  
     public void perimetro(){
-    System.out.println("El perimetro es: "+(baseM+basem+lado+lado));
+    JOptionPane.showMessageDialog(null,"El perimetro es: "+(baseM+basem+lado+lado));
     }
 }
