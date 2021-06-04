@@ -21,9 +21,9 @@ public class proyecto1 {
                                                                                                             //menus
         
        opcion=JOptionPane.showInputDialog("selecione operacion a realizar."
-        +"\n 1.  Cuadradro "
-        +"\n 2.  Rectangulo"
-        +"\n 3. Triangulo"
+        +"\n 1.Cuadradro "
+        +"\n 2.Rectangulo"
+        +"\n 3.Triangulo"
         +"\n 4.Rombo"
         +"\n 5.Romboide "
         +"\n 6.Trapecio"
@@ -57,7 +57,7 @@ public class proyecto1 {
                     tri.perimetro();
 
                     break;
-                case "4":            //rombo
+                case "4":                                                          //rombo
                     Diam=Double.parseDouble(JOptionPane.showInputDialog("Ingrese Diametro Mayor "));
                     diam=Double.parseDouble(JOptionPane.showInputDialog("Ingrese Diametro Menor"));
                     lado=Double.parseDouble(JOptionPane.showInputDialog("Ingrese Lado "));
@@ -81,7 +81,7 @@ public class proyecto1 {
                     tra.area();
                     tra.perimetro();
                     break;
-                case "7":   //circulo
+                case "7":                                                           //circulo
                     Diam=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el Diametro"));
                     radio=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el Radio"));
                     Circulo cir = new Circulo(Diam,radio);
