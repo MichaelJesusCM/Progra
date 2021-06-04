@@ -5,6 +5,8 @@
  */
 package com.mycompany.github;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Pc Xtreme
@@ -20,11 +22,11 @@ public class Rombo {
         this.lado=l;
     }
    public void area(){
-       System.out.println("El Área Es: "+(this.diame*this.Dime));
+       JOptionPane.showMessageDialog(null,"El Área Es: "+(this.diame*this.Dime));
    }
    
    public void perimetro(){
-       System.out.println("El Área Es: "+(lado*4));
+       JOptionPane.showMessageDialog(null,"El Área Es: "+(lado*4));
    
    }
 }
