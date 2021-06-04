@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  */
 public class proyecto1 {
 
-    public static double base, altura, lado, apotema, baseM, basem, numla, diam, Diam, radio;           //variables
+   /* public static double base, altura, lado, apotema, baseM, basem, numla, diam, Diam, radio;           //variables
 
     public static void main(String[] args) {
         // TODO code application logic here
@@ -110,7 +110,8 @@ public class proyecto1 {
         } finally {
             //cerrar la conexion 
              JOptionPane.showMessageDialog(null,"Grcias por utilizar nuestro sericio.");
-        }
+        }*/
+    Cuadrados fc = new Cuadrados();
 
     }
-}
+
