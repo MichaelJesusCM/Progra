@@ -28,12 +28,7 @@ public class FigurasFrame extends JFrame{
         ////////////PANTALLA PORINCIPAL////////////
         setSize(500, 500);
 
-        txtNum1 = new JTextField("0", 10);
-        txtNum1.setFocusable(true);
-        txtNum1.setBackground(Color.CYAN);
-
-        txtNum2 = new JTextField("0", 10);
-        txtNum2.setBackground(Color.CYAN);
+        
 
         lblResultado = new JLabel();
 
@@ -83,8 +78,8 @@ public class FigurasFrame extends JFrame{
     private class Cuadrados extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            setSize(500,500);
-            Cuadrados fc = new Cuadrados();
+            
+            frmCuadrado fc = new frmCuadrado();
             
 
         }
