@@ -65,6 +65,7 @@ public class Cuadrado extends JFrame {
          int num2 =Integer.parseInt(txtNum2.getText());
          lblResultado.setText("="+(num1+num2+num1+num2));
      } 
-
-}   
 }
+} 
+   
+
