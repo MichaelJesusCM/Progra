@@ -20,7 +20,7 @@ public class ClasePrincipal {
      */
     public static void main(String[] args) {
         
-        FrameFiguras ff = new FrameFiguras();
+        FigurasFrame ff = new FigurasFrame();
     }
 
 }
