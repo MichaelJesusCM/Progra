@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.mycompany.github;
 
 import java.awt.*;
@@ -5,40 +10,47 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
 
-public class CuadradroFrame extends JFrame {
+/**
+ *
+ * @author Michael Jesús
+ */
+public class CirculoFrame extends JFrame {
 
-    public CuadradroFrame() {
+    public CirculoFrame() {
         cargarComponentes();
 
     }
     private JPanel panel;
-    private JTextField txtLado, txtHacer;
+    private JTextField txtRadio, txtDiametro, txtHacer;
     private JButton btnArea, btnPerimetro, btnLimpiar;
     private JLabel lblResultado;
 
     private void cargarComponentes() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(500, 500);
-        setTitle("Cuadrado");
+        setTitle("Circulos");
 
-        txtLado = new JTextField("", 10);
-        txtLado.setBackground(Color.cyan);
+        txtRadio= new JTextField("",10);
+        txtRadio.setFocusable(true);
+        txtRadio.setBackground(Color.cyan);
+        txtDiametro = new JTextField("",10);
+        txtDiametro.setBackground(Color.green);
 
+        
         lblResultado = new JLabel();
 
         btnArea = new JButton("Perimetro");
         btnArea.addMouseListener(new Perimetro());
-
         btnPerimetro = new JButton("Area");
         btnPerimetro.addMouseListener(new Area());
-        
         btnLimpiar = new JButton("Limpiar");
         btnLimpiar.addMouseListener(new Limpiar());
         
-        txtHacer = new JTextField("Debe ingresar el Lado");
+        txtHacer = new JTextField("Ingrese primero el Radio y luego el Diametro");
         
         panel = new JPanel();
-        panel.add(txtLado);
+        panel.add(txtRadio);
+        panel.add(txtDiametro);
         panel.add(lblResultado);
         panel.add(btnArea);
         panel.add(btnPerimetro);
@@ -47,32 +59,35 @@ public class CuadradroFrame extends JFrame {
         setContentPane(panel);
         setVisible(true);
     }
-
+//Boton Área
     private class Area extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-
-            int lado = Integer.parseInt(txtLado.getText());
-            lblResultado.setText(" = " + (lado * lado));
+            double val = 3.14;
+            int diametro = Integer.parseInt(txtRadio.getText());
+            int radio = Integer.parseInt(txtDiametro.getText());
+            lblResultado.setText(" = " + (val ) *(radio*radio));
 
         }
     }
-
+//Boton perimetro
     private class Perimetro extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            int lado = Integer.parseInt(txtLado.getText());
-
-            lblResultado.setText(" = " + (lado * 4));
+            double val = 3.14;
+            
+            int diametro = Integer.parseInt(txtRadio.getText());
+            lblResultado.setText(" = " + (val * diametro));
         }
     }
-    ///boton limpiar
-    public class Limpiar extends MouseAdapter {
+    //Boton limpiar
+     public class Limpiar extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            txtLado.setText("");
+            txtDiametro.setText("");
+            txtRadio.setText("");
             lblResultado.setText("");
-            
         }
     }
+
 }

@@ -5,52 +5,50 @@
  */
 package com.mycompany.github;
 
-/**
- *
- * @author PC
- */
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
 
-public class TrianguloFrame extends JFrame {
+/**
+ *
+ * @author Michael Jesús
+ */
+public class RomboideFrame extends JFrame {
 
-    public TrianguloFrame() {
+    public RomboideFrame() {
         cargarComponentes();
+
     }
     private JPanel panel;
-    private JTextField txtBase, txtAltura, txtLado, txtHacer;
+    private JTextField txtBase, txtAltura, txtHacer;
     private JButton btnArea, btnPerimetro, btnLimpiar;
     private JLabel lblResultado;
 
     private void cargarComponentes() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 200);
-        setTitle("Triangulos");
-        
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setSize(500, 500);
+        setTitle("Romboides");
+
         txtBase = new JTextField("", 10);
-        txtBase.setBackground(Color.cyan);
         txtBase.setFocusable(true);
+        txtBase.setBackground(Color.cyan);
 
         txtAltura = new JTextField("", 10);
         txtAltura.setBackground(Color.green);
-        
-        txtLado = new JTextField("", 10);
-        txtLado.setBackground(Color.yellow);
-        
-        lblResultado = new JLabel();
-        
 
-        btnArea = new JButton("Area");
-        btnArea.addMouseListener(new Area());
-        
-        btnPerimetro = new JButton("Perimetro");
-        btnPerimetro.addMouseListener(new Perimetro());
+        lblResultado = new JLabel();
+
+        btnArea = new JButton("Perimetro");
+        btnArea.addMouseListener(new Perimetro());
+
+        btnPerimetro = new JButton("Area");
+        btnPerimetro.addMouseListener(new Area());
         
         btnLimpiar = new JButton("Limpiar");
         btnLimpiar.addMouseListener(new Limpiar());
-        txtHacer = new JTextField("Ingrese Pimero la Base y luego la Altura");
+        
+        txtHacer = new JTextField("Ingrese Primero La Base y luego la Altura");
 
         panel = new JPanel();
         panel.add(txtBase);
@@ -60,42 +58,38 @@ public class TrianguloFrame extends JFrame {
         panel.add(btnPerimetro);
         panel.add(btnLimpiar);
         panel.add(txtHacer);
-
         setContentPane(panel);
         setVisible(true);
-
     }
 
     private class Area extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
+            int base = Integer.parseInt(txtBase.getText());
+            int altura = Integer.parseInt(txtAltura.getText());
+            lblResultado.setText(" = " + (base * altura));
 
-            int num1 = Integer.parseInt(txtBase.getText());
-            int num2 = Integer.parseInt(txtAltura.getText());
-            lblResultado.setText("=" + ((num1 * num2) / 2));
         }
     }
 
-        private class Perimetro extends MouseAdapter {
+    private class Perimetro extends MouseAdapter {
 
-            public void mouseClicked(MouseEvent e) {
-
-                int num1 = Integer.parseInt(txtBase.getText());
-                int num2 = Integer.parseInt(txtAltura.getText());
-                lblResultado.setText("=" + (num1 + num2 + num1));
-            }
-
+        public void mouseClicked(MouseEvent e) {
+            int base = Integer.parseInt(txtBase.getText());
+            int altura = Integer.parseInt(txtAltura.getText());
+            lblResultado.setText(" = " + (base + base + altura + altura));
         }
-        
-        public class Limpiar extends MouseAdapter {
+    }
+
+    public class Limpiar extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
             txtBase.setText("");
             txtAltura.setText("");
-            txtLado.setText("");
             lblResultado.setText("");
+            txtBase.setFocusable(true);
             
         }
     }
-    }
 
+}

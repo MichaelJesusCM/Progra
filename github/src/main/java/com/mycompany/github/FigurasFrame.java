@@ -10,10 +10,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
 
-/**
- *
- * @author Michael Jesús
- */
+
 public class FigurasFrame extends JFrame{
     public FigurasFrame() {
         cargarComponentes();
@@ -25,7 +22,7 @@ public class FigurasFrame extends JFrame{
     private JLabel lblResultado;
 
     private void cargarComponentes() {
-        ////////////PANTALLA PORINCIPAL////////////
+        ////////////PANTALLA PRINCIPAL////////////
         setSize(500, 500);
 
         
@@ -57,8 +54,7 @@ public class FigurasFrame extends JFrame{
         btnTriangulo.addMouseListener(new Triangulo());
 
         panel = new JPanel();
-        panel.add(txtNum1);
-        panel.add(txtNum2);
+       
         panel.add(lblResultado);
         panel.add(btnCuadrados);
         panel.add(btnCirculo);
@@ -73,69 +69,70 @@ public class FigurasFrame extends JFrame{
         setVisible(true);
 
     }
-//// funcion sumar
+//// Llamar Cuadrados
 
     private class Cuadrados extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
             
-            frmCuadrado fc = new frmCuadrado();
+            CuadradroFrame cuaf = new CuadradroFrame();
             
 
         }
     }
-
+//// Llamar Circulos
     private class Circulo extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            ///
+            CirculoFrame cirf = new CirculoFrame();
 
         }
     }
-
+//// Llamar poligono
     private class Poligono extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //Cuadrados fc = new Cuadrados();
+           PoligonoFrame polf = new PoligonoFrame();
 
         }
     }
-
+//// Llamar Rectangulos
     private class Rectangulo extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //Cuadrados fc = new Cuadrados();
+            RectanguloFrame recf = new RectanguloFrame();
 
         }
     }
-
+//// Llamar Rombo
     private class Rombo extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //Cuadrados fc = new Cuadrados();
+            RomboFrame rof = new RomboFrame();
 
         }
     }
-
+//// Llamar Romboides
     private class Romboide extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //
+            RomboideFrame romf = new RomboideFrame ();
         }
     }
-
+//// Llamar Trapecio
     private class Trapecio extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //Cuadrados fc = new Cuadrados();
+            TrapecioFrame traf = new TrapecioFrame();
 
         }
     }
-
+//// Llamar Triangulo
     private class Triangulo extends MouseAdapter {
 
         public void mouseClicked(MouseEvent e) {
-            //Cuadrados fc = new Cuadrados();
+            TrianguloFrame trif = new TrianguloFrame();
+            
 
         }
     }
