@@ -60,6 +60,9 @@ public class FmrCuadrado extends JFrame {
         setContentPane(panel);
         setVisible(true);
     }
+      private void setContentPane(JPanel panel) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     private class Perimetro extends MouseAdapter {
 

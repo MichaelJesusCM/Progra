@@ -45,7 +45,7 @@ public class FmrPoligono extends JFrame {
         btnPerimetro = new JButton("Area");
         btnPerimetro.addMouseListener(new Area());
         
-         panel=new JPanel();
+        panel=new JPanel();
         panel.add(txtNum1);
         panel.add(txtNum2);
         panel.add(txtNum3);
@@ -54,6 +54,10 @@ public class FmrPoligono extends JFrame {
         panel.add(btnPerimetro);
         setContentPane(panel);
         setVisible(true);
+        
+    }
+      private void setContentPane(JPanel panel) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
  private class Perimetro extends MouseAdapter{
         public void mouseClicked(MouseEvent e){
